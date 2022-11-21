@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+</head>
+<body class="bg-warning">
+<section class="container mt-5">
+    <form action="" class="form needs-validation" novalidate>
+    <div>
+        <label class="form-label" for="validationDefault01">Nome:</label>
+        <input class="form-control" type="text" name="nome"  
+        for="ValidationDefault01" required>
+        <div class="valid-feedback">
+            Campo preenchido com sucesso!
+        </div>
+        <div class="invalid-feedback">
+            Por favor, preencha o campo nome!
+        </div>
+    </div>
+        <label class="form-label" 
+        for="validationDefault02">E-mail:</label>
+        <input class="form-control" type="email" name="email" 
+        id="validationDefault02" required>
+        <div class="invalid-feedback">
+            Por favor, preencha o campo e-mail!
+        </div>
+        <div class="valid-feedback">
+            Por favor, preencha o campo e-mail!
+        </div>
+        <label class="form-label" 
+        for="validationDefault04">Mensagem</label>
+        <textarea name="" id="" cols="30" rows="10" 
+        class="form-control" id="validationDefault04" required></textarea>
+        <div class="invalid-feedback">
+            Por favor, preencha o campo
+        </div>
+        <input type="submit" class="d-block mx-auto btn 
+        btn-outline-dark mt-2" value="Enviar">
+    </form>    
+</section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()        
+    </script>
+    </script>
+    
+</body>
+</html>
